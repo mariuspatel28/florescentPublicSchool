@@ -1,0 +1,19 @@
+import { getPayload } from 'payload'
+import config from './payload.config'
+
+let cachedPayload: any = null
+
+export async function getServerPayload() {
+  if (cachedPayload) {
+    return cachedPayload
+  }
+
+  cachedPayload = await getPayload({
+    config,
+  })
+
+  return cachedPayload
+}
+
+// Re-export for convenience
+export { getServerPayload as getPayload }
