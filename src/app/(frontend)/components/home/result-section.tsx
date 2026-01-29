@@ -74,10 +74,10 @@ function ResultTableCard({ result }: { result: ResultItem }) {
               <th className="p-3 sm:p-4 text-[10px] sm:text-xs font-bold uppercase text-slate-400 tracking-widest">
                 Academic Year
               </th>
-              <th className="p-3 sm:p-4 text-[10px] sm:text-xs font-bold uppercase text-slate-400 tracking-widest text-right">
+              <th className="p-3 sm:p-4 text-[10px] sm:text-xs font-bold uppercase text-slate-400 tracking-widest">
                 School Result
               </th>
-              <th className="p-3 sm:p-4 text-[10px] sm:text-xs font-bold uppercase text-slate-400 tracking-widest text-right">
+              <th className="p-3 sm:p-4 text-[10px] sm:text-xs font-bold uppercase text-slate-400 tracking-widest">
                 Board Result
               </th>
             </tr>
@@ -92,10 +92,10 @@ function ResultTableCard({ result }: { result: ResultItem }) {
                 <td className="p-3 sm:p-4 text-sm sm:text-base font-semibold text-[#1e3a5a]">
                   {data.academicYear}
                 </td>
-                <td className="p-3 sm:p-4 text-lg sm:text-xl md:text-2xl font-bold text-[#ffc107] text-right">
+                <td className="p-3 sm:p-4 text-lg sm:text-xl md:text-2xl font-bold text-[#0c3b55] ">
                   {data.schoolResult}
                 </td>
-                <td className="p-3 sm:p-4 text-lg sm:text-xl md:text-2xl font-bold text-[#ffc107] text-right">
+                <td className="p-3 sm:p-4 text-lg sm:text-xl md:text-2xl font-bold text-[#0c3b55]">
                   {data.boardResult}
                 </td>
               </tr>
