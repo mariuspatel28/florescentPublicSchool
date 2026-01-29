@@ -137,6 +137,9 @@ export function Footer() {
           <p className="text-center black text-sm text-gray-300">
             © {new Date().getFullYear()} Floroscent Public School. All rights reserved.
           </p> 
+          <p className="text-right black text-sm text-gray-300">
+            Created and managed by Nihal dave and team
+          </p> 
         </div>
       </motion.div>
     </footer>

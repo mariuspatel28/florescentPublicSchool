@@ -4,6 +4,7 @@ import { ContentSectionClient } from '@/app/(frontend)/components/home/content-s
 import { TestimonialsSlider } from '@/app/(frontend)/components/home/testimonials-slider'
 import { MapsSection } from '@/app/(frontend)/components/home/maps-section'
 import { ResultsSection } from '@/app/(frontend)/components/home/result-section'
+import SilverJubilee  from '@/app/(frontend)/components/home/silverJublie'
 
 export const revalidate = 60
 
@@ -45,8 +46,10 @@ export default async function Page() {
       {/* Hero Section */}
       <HeroSlider slides={homeData.heroSlides || []} />
 
+      <SilverJubilee />
       {/* Featured Content / Scroll Cards */}
       <ContentSectionClient cards={homeData.scrollCards || []} />
+
 
       {/* ACADEMIC RESULTS SECTION 
           This component now receives the updated structure including 'yearlyData'
