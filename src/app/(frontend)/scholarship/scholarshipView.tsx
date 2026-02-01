@@ -72,7 +72,7 @@ export default function ScholarshipView({
                     <Icon className="w-7 h-7" />
                   </div>
                   <div className="text-sm font-bold text-secondary mb-2 uppercase tracking-wider">
-                    Standards {s.standards}
+                    {s.standards}
                   </div>
                   <h3 className="text-2xl font-bold mb-4">{s.title}</h3>
                   <div className="text-3xl font-black text-primary mb-4">{s.reward}</div>

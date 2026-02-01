@@ -157,10 +157,10 @@ export default function CoCurricularView({ data }: { data: CoCurricularData }) {
                         <Calendar className="w-4 h-4 text-primary" />
                         <span>{currentEvent.date}</span>
                       </div>
-                      <div className="flex items-center gap-1 bg-secondary/10 px-3 py-1.5 rounded-full">
+                      {/* <div className="flex items-center gap-1 bg-secondary/10 px-3 py-1.5 rounded-full">
                         <MapPin className="w-4 h-4 text-secondary" />
                         <span>{currentEvent.location}</span>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                   <div className="flex gap-2">

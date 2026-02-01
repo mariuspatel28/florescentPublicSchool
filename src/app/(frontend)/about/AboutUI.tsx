@@ -117,7 +117,7 @@ export default function AboutUI({ data }: Props) {
                   <p className="text-amber-700 uppercase text-sm font-semibold tracking-widest">{leader.role}</p>
                   <p className="italic text-slate-600 mt-4 text-lg">{leader.message}</p>
                   <p className="text-slate-500 mt-4 leading-relaxed"> 
-                    <span className='text-amber-600 font-medium' >Message from : </span> {leader.introduction}
+                    <span className='text-amber-600 font-medium' >Message : </span> {leader.introduction}
                   </p>
                 </div>
               </motion.div>

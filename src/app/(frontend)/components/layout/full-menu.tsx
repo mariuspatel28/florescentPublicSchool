@@ -16,6 +16,10 @@ interface MenuItem {
 
 const menuData: MenuItem[] = [
   { label: 'Home', href: '/' },
+  {
+    label: 'About Us',
+    href: '/about',
+  },
   { label: 'Schedules', href: '/schedules' },
   { label: 'Gallery', href: '/gallery' },
   {
@@ -27,10 +31,7 @@ const menuData: MenuItem[] = [
       { label: 'Previous Year results', href: '/achievements/PreviousYearResults' },
     ],
   },
-  {
-    label: 'About Us',
-    href: '/about',
-  },
+  
   {
     label: 'Admission',
     href: '/admissions/',

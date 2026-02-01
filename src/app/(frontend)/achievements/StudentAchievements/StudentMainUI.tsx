@@ -36,7 +36,7 @@ export default function StudentView({ students }: { students: StudentAchievement
               viewport={{ once: true }}
               className="inline-flex items-center gap-3 px-6 py-3 rounded-full"
             >
-              <span className="tracking-[0.1em] inline-block px-4 py-2 bg-secondary/10 text-chart-1 rounded-full text-sm font-semibold mb-6">Excellence Redefined</span>
+              <span className="tracking-[0.1em] inline-block px-4 py-2 bg-secondary/10 text-accent rounded-full text-sm font-semibold mb-6">Excellence Redefined</span>
             </motion.div>
 
             <motion.h1

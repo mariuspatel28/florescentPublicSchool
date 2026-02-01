@@ -173,7 +173,7 @@ export default function CareerView({ staticData, jobs }: { staticData: CareerDat
                         {job.requirements?.map((req, idx) => (
                           <div
                             key={idx}
-                            className="flex items-start gap-2 text-sm text-muted-foreground"
+                            className="flex items-start gap-2 text-sm text-accent"
                           >
                             <LucideIcons.CheckCircle2 className="w-4 h-4 text-secondary mt-0.5" />
                             {req.point}

@@ -42,6 +42,9 @@ export default function SilverJubilee() {
                   className="text-center"
                 >
                   <Trophy className="w-6 h-6 md:w-8 md:h-8 text-[#ffc107] mb-1 mx-auto" />
+                  <span className="block text-[10px] md:text-xs font-black text-[#1e3a5a] uppercase tracking-[0.3em] mt-1">
+                    Glorious
+                  </span>
                   <span className="block text-5xl md:text-7xl font-black text-[#1e3a5a] tracking-tighter leading-none">
                     25
                   </span>
@@ -63,7 +66,7 @@ export default function SilverJubilee() {
           >
             <div className="flex items-center justify-center gap-4">
               <div className="h-px w-12 md:w-20 bg-gradient-to-r from-transparent to-[#1e3a5a]/20" />
-              <span className="text-xs md:text-sm font-black text-[#1e3a5a]/60 uppercase tracking-[0.4em]">1999 — 2024</span>
+              <span className="text-xs md:text-sm font-black text-[#1e3a5a]/60 uppercase tracking-[0.4em]">2000 — 2025</span>
               <div className="h-px w-12 md:w-20 bg-gradient-to-l from-transparent to-[#1e3a5a]/20" />
             </div>
 
@@ -94,7 +97,7 @@ export default function SilverJubilee() {
                   <div className="w-12 h-12 rounded-2xl bg-[#1e3a5a]/5 flex items-center justify-center text-[#1e3a5a]">
                     <item.icon size={24} />
                   </div>
-                  <span className="text-[10px] font-black uppercase tracking-widest text-[#1e3a5a]/40">{item.label}</span>
+                  <span className="text-[10px] font-black uppercase tracking-widest text-accent">{item.label}</span>
                 </motion.div>
               ))}
             </div>

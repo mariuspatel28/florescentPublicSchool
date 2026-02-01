@@ -34,9 +34,11 @@ export default function AcademicsView({ data }: { data: AcademicsData }) {
           ></motion.div>
         </div>
         <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }} className="relative md:mt-20 mb-10">
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          className="relative md:mt-20 mb-10"
+        >
           <div className="absolute top-1/2 left-0 w-full h-1 bg-linear-to-r from-transparent via-primary/30 to-transparent -translate-y-1/2"></div>
           <div className="relative flex justify-center">
             <div className="bg-background px-8 py-3 border border-border/50 rounded-full shadow-lg">
@@ -55,7 +57,7 @@ export default function AcademicsView({ data }: { data: AcademicsData }) {
             <div className="max-w-6xl mx-auto">
               {/* Examination Schedule */}
               <div className="space-y-8 mb-20">
-                <h2 className="text-2xl md:text-3xl font-bold">Examination Schedule</h2>
+                <h2 className="text-2xl md:text-3xl font-bold">Schedule of Examination</h2>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                   {data.examSchedules?.map((exam, index) => (
                     <motion.div
@@ -81,47 +83,9 @@ export default function AcademicsView({ data }: { data: AcademicsData }) {
               </div>
 
               {/* Upcoming Events Table */}
-              <div className="mb-20">
-                <h2 className="text-2xl md:text-3xl font-bold mb-6">Upcoming Events</h2>
-                <div className="bg-card rounded-2xl border border-border overflow-hidden">
-                  <div className="overflow-x-auto">
-                    <table className="w-full">
-                      <thead className="bg-muted/50">
-                        <tr>
-                          <th className="text-left py-4 px-6 font-semibold">Event</th>
-                          <th className="text-left py-4 px-6 font-semibold">Date & Time</th>
-                          <th className="text-left py-4 px-6 font-semibold">Venue</th>
-                          <th className="text-left py-4 px-6 font-semibold">Participants</th>
-                        </tr>
-                      </thead>
-                      <tbody className="divide-y divide-border">
-                        {data.upcomingEvents?.map((event, index) => (
-                          <tr key={index} className="hover:bg-muted/30 transition-colors">
-                            <td className="py-4 px-6">
-                              <div className="font-bold">{event.title}</div>
-                              <div className="text-xs text-primary uppercase">{event.category}</div>
-                            </td>
-                            <td className="py-4 px-6 text-sm">
-                              <div className="flex items-center gap-2">
-                                <Calendar className="w-3 h-3" /> {event.date}
-                              </div>
-                              <div className="flex items-center gap-2">
-                                <Clock className="w-3 h-3" /> {event.time}
-                              </div>
-                            </td>
-                            <td className="py-4 px-6 text-sm text-muted-foreground">
-                              {event.venue}
-                            </td>
-                            <td className="py-4 px-6 text-sm">{event.participants}</td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-
+              
               {/* PTM Schedule */}
+              <h2 className="text-2xl md:text-3xl font-bold mb-6">Schedule of PTM </h2>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 {data?.ptmSchedules?.map((ptm: any, index: number) => (
                   <div
@@ -167,9 +131,50 @@ export default function AcademicsView({ data }: { data: AcademicsData }) {
                   </div>
                 ))}
               </div>
+
+              <div className="mt-10">
+                <h2 className="text-2xl md:text-3xl font-bold mb-6">Schedule of Events</h2>
+                <div className="bg-card rounded-2xl border border-border overflow-hidden">
+                  <div className="overflow-x-auto">
+                    <table className="w-full">
+                      <thead className="bg-muted/50">
+                        <tr>
+                          <th className="text-left py-4 px-6 font-semibold">Event</th>
+                          <th className="text-left py-4 px-6 font-semibold">Date & Time</th>
+                          <th className="text-left py-4 px-6 font-semibold">Venue</th>
+                          <th className="text-left py-4 px-6 font-semibold">Participants</th>
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-border">
+                        {data.upcomingEvents?.map((event, index) => (
+                          <tr key={index} className="hover:bg-muted/30 transition-colors">
+                            <td className="py-4 px-6">
+                              <div className="font-bold">{event.title}</div>
+                              <div className="text-xs text-primary uppercase">{event.category}</div>
+                            </td>
+                            <td className="py-4 px-6 text-sm">
+                              <div className="flex items-center gap-2">
+                                <Calendar className="w-3 h-3" /> {event.date}
+                              </div>
+                              <div className="flex items-center gap-2">
+                                <Clock className="w-3 h-3" /> {event.time}
+                              </div>
+                            </td>
+                            <td className="py-4 px-6 text-sm text-muted-foreground">
+                              {event.venue}
+                            </td>
+                            <td className="py-4 px-6 text-sm">{event.participants}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
-        </section> 
+        </section>
       </section>
     </div>
   )
