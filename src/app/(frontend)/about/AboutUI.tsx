@@ -158,7 +158,6 @@ export default function AboutUI({ data }: Props) {
                       )}
                     </div>
                     <h4 className="text-xl font-bold text-slate-900">{member.name}</h4>
-                    <p className="text-primary font-medium text-sm mt-1">{member.designation}</p>
                     {member.category && (
                       <span className="inline-block mt-3 px-3 py-1 bg-slate-100 text-slate-500 text-[10px] uppercase tracking-widest rounded-full">
                         {member.category}
