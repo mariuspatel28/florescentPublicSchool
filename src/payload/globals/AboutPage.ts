@@ -96,6 +96,7 @@ export const AboutPage: GlobalConfig = {
         { name: 'name', type: 'text', required: true },
         { name: 'category', type: 'text', admin: { description: 'e.g. Primary Teacher, Arts Dept' } },
         { name: 'image', type: 'upload', relationTo: 'media' },
+        { name : 'designation', type : 'text'}
       ],
     },
     {
