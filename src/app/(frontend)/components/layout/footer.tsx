@@ -49,7 +49,7 @@ export function Footer() {
                   href="mailto:info@florescentpublicschool.org"
                   className="text-gray-400 hover:text-primary transition-colors"
                 >
-                  info@florescentpublicschool.org
+                  fpsinfo21@gmail.com
                 </a>
               </div>
             </div>
